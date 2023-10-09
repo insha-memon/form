@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration Form</title>
+    <link rel="stylesheet" href="reg.css">
+</head>
+<body>
+    <form id="form" onsubmit="return validateForm()">
+         <h1>User Registration Form</h1>
+            <div class="hidden">
+            <p id="result" >Please fill the form.</p>
+            <label for="username">Username:</label>
+            <input type="text" id="username"  class="textInput" ="username" required autofocus placeholder="Enter Username">
+            <div id="usernameError" class="error"></div>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" class="textInput"  name="email" required placeholder="Enter Email">
+            <div id="emailError" class="error"></div>
+    
+            <label for="password">Password:</label>
+            <input type="password" id="password" class="textInput" name="password"   required placeholder="Enter Password">
+            <div id="passwordError" class="error"></div>
+    
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" class="textInput" name="confirmPassword" required placeholder="confirm Password">
+            <div id="confirmPasswordError" class="error"></div>
+             <button id="submitbtn"> Register</button>
+
+             <div class="group">
+                <span><a href="#">Forget Password</a></span>
+                <span><a href="#">Login</a></span>
+             </div>
+            </div>
+        </form>
+    
+        <script src="reg.js"></script>
+    </body>
+    </html>
+    
